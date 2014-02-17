@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="splashNameAppDimen">24pt</dimen>
+    <dimen name="versionDimen">5pt</dimen>
+    <dimen name="infoOfVersionDimen">3pt</dimen>
+    <dimen name="mainMenu">15pt</dimen>
+    <dimen name="menu_item_size">13pt</dimen>
+</resources>

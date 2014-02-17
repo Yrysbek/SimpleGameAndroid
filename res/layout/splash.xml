@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/beenThere" android:textSize="@dimen/splashNameAppDimen" android:textColor="@color/splashTextColor"
+            android:id="@+id/TextviewTopTitle"/>
+    <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:stretchColumns="*" android:id="@+id/tableLayout">
+        <TableRow android:layout_height="12dp">
+            <ImageView android:src="@drawable/splash1" android:cropToPadding="false" android:adjustViewBounds="false"
+                       android:padding="20pt"/>
+            <ImageView android:src="@drawable/splash2" android:padding="20pt"/>
+        </TableRow>
+        <TableRow android:layout_height="12dp">
+            <ImageView android:src="@drawable/splash3" android:padding="20pt"/>
+            <ImageView android:src="@drawable/splash4" android:padding="20pt"/>
+        </TableRow>
+    </TableLayout>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/doneThat" android:textSize="@dimen/splashNameAppDimen" android:textColor="@color/splashTextColor"
+            android:id="@+id/TextviewBottomTitle"/>
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/version" android:textColor="@color/versionColor"
+            android:textSize="@dimen/versionDimen" android:background="@color/versionBackgroundColor"/>
+</LinearLayout>
+

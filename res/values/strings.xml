@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Бул жерде болдук, тигил жерде болобуз!</string>
+    <string name="help">Help Screen</string>
+    <string name="menu">Main Menu Screen</string>
+    <string name="splash">Splash Screen</string>
+    <string name="settings">Settings Screen</string>
+    <string name="game">Game Screen</string>
+    <string name="scores">Scores Screen</string>
+    <string name="beenThere">БУЛ ЖЕРДЕ БОЛДУК</string>
+    <string name="doneThat">ТИГИЛ ЖЕРДЕ БОЛОБУЗ</string>
+    <string name="version">Түзүүлүү версиясы 1.0</string>
+    <string name="mainMenuTitle">Башкы меню</string>
+    <string name="menu_item_play">Ойноо</string>
+    <string name="menu_item_scores">Эң жакшы көрсөткүчтөр</string>
+    <string name="menu_item_settings">Оңдоолор</string>
+    <string name="menu_item_help">Жардам</string>
+</resources>
