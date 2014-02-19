@@ -3,7 +3,8 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-              android:background="@drawable/bkgrnd">
+              android:background="@drawable/bkgrnd"
+        android:id="@+id/linear_layout">
     <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
         <ImageView
                 android:layout_width="wrap_content"
@@ -36,7 +37,9 @@
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentTop="true"
-                android:id="@+id/ListView_Menu" android:divider="@drawable/divider">
+                android:id="@+id/ListView_Menu"
+                android:divider="@drawable/divider"
+                android:listSelector="@drawable/selector">
         </ListView>
     </RelativeLayout>
 </LinearLayout>

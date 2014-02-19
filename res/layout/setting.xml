@@ -3,15 +3,97 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-        >
-    <TextView
+        android:background="@drawable/bkgrnd">
+
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/glob_icon"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/settings"
+                android:textSize="@dimen/mainMenu"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/glob_icon"/>
+    </RelativeLayout>
+    <ScrollView
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/settings"/>
-    <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="273dp"
-            android:id="@+id/imageView"
-            android:layout_marginLeft="2dp"/>
+            android:layout_height="fill_parent"
+            android:isScrollContainer="true"
+            android:scrollbars="vertical">
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+                android:orientation="vertical">
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Nickname"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EditText_Nickname"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:inputType="textPersonName"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Email"/>
+            <EditText
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/EditText_Email"
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"/>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Password"/>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/Button_Password"/>
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Password not set"/>
+            </LinearLayout>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/DateOfBirth"/>
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:id="@+id/Button_DOB"/>
+                <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:text="Date not set"/>
+            </LinearLayout>
+            <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Gender"/>
+            <Spinner android:layout_width="fill_parent" android:layout_height="wrap_content"
+                    android:id="@+id/Spinner_gender">
+            </Spinner>
+        </LinearLayout>
+
+    </ScrollView>
 </LinearLayout>
 

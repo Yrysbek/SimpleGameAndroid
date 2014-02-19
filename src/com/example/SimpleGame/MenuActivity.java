@@ -4,10 +4,9 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.TextView;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.*;
 
 /**
  * Created by respect on 2/17/14.
@@ -50,5 +49,9 @@ public class MenuActivity  extends Activity {
             }
         });
 
+
+        Animation fade = AnimationUtils.loadAnimation(this, R.anim.fade_in);
+        LinearLayout layout = (LinearLayout)findViewById(R.id.linear_layout);
+        layout.startAnimation(fade);
     }
 }

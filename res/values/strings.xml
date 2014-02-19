@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Бул жерде болдук, тигил жерде болобуз!</string>
-    <string name="help">Help Screen</string>
+    <string name="help">Жардам</string>
     <string name="menu">Main Menu Screen</string>
     <string name="splash">Splash Screen</string>
     <string name="settings">Settings Screen</string>
@@ -15,4 +15,14 @@
     <string name="menu_item_scores">Эң жакшы көрсөткүчтөр</string>
     <string name="menu_item_settings">Оңдоолор</string>
     <string name="menu_item_help">Жардам</string>
+    <string name="all_scores">Бардык жакшы көрсөткүчтөр</string>
+    <string name="frieds_scores">Достордун көрсөткүчтөрү</string>
+    <string name="gender_male">Эркек</string>
+    <string name="gender_female">Айым</string>
+    <string name="gender_neutral">Маанилүү эмес</string>
+    <string name="Email">Электрондук почта</string>
+    <string name="Nickname">Атыңыз</string>
+    <string name="Password">Ачкыч</string>
+    <string name="DateOfBirth">Туулган күнүңүз</string>
+    <string name="Gender">Пол</string>
 </resources>

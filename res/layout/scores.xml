@@ -3,15 +3,60 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
+              android:background="@drawable/bkgrnd"
         >
-    <TextView
+
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:src="@drawable/glob_icon"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/scores"
+                android:textSize="@dimen/mainMenu"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/glob_icon"/>
+    </RelativeLayout>
+    <TabHost
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/scores"/>
-    <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="273dp"
-            android:id="@+id/imageView"
-            android:layout_marginLeft="2dp"/>
+            android:layout_height="fill_parent"
+            android:id="@+id/scoresTabHost">
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+            <TabWidget
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@android:id/tabs"/>
+            <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+                <ScrollView
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scrollbars="vertical"
+                        android:id="@+id/ScrollViewAllScores">
+                <TableLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:stretchColumns="*"
+                        android:id="@+id/TableLayoutScores">
+                </TableLayout>
+                </ScrollView>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
 </LinearLayout>
 
